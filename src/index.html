@@ -10,22 +10,22 @@
         body {
             transition: background-color 0.3s ease, color 0.3s ease;
         }
-        
+
         .dark {
             background-color: #000;
             color: #fff;
         }
-        
+
         .dark .card-light {
             background-color: #1a1a1a;
             color: #fff;
         }
-        
+
         .dark .input-light {
             background-color: #2a2a2a;
             color: #fff;
         }
-        
+
         .dark hr {
             border-color: #333;
         }
@@ -40,12 +40,17 @@
             </div>
             <div class="flex items-center gap-2">
                 <ul class="flex flex-wrap items-center gap-2">
-                    <li class="hidden md:block"><a href="#home" class="p-2 sm:p-4 hover:text-orange-500 transition-colors">Home</a></li>
-                    <li class="hidden md:block"><a href="#about" class="p-2 sm:p-4 hover:text-orange-500 transition-colors">About me</a></li>
-                    <li class="hidden md:block"><a href="#services" class="p-2 sm:p-4 hover:text-orange-500 transition-colors">Services</a></li>
-                    <li class="hidden md:block"><a href="#projects" class="p-2 sm:p-4 hover:text-orange-500 transition-colors">Projects</a></li>
-                    <li class="hidden md:block"><a href="#contact" class="p-2 sm:p-4 hover:text-orange-500 transition-colors">Contacts</a></li>
-                    <li class="p-2">
+                    <li class="hidden md:block"><a href="#home"
+                            class="p-2 sm:p-4 hover:text-orange-500 transition-colors">Home</a></li>
+                    <li class="hidden md:block"><a href="#about"
+                            class="p-2 sm:p-4 hover:text-orange-500 transition-colors">About me</a></li>
+                    <li class="hidden md:block"><a href="#services"
+                            class="p-2 sm:p-4 hover:text-orange-500 transition-colors">Services</a></li>
+                    <li class="hidden md:block"><a href="#projects"
+                            class="p-2 sm:p-4 hover:text-orange-500 transition-colors">Projects</a></li>
+                    <li class="hidden md:block"><a href="#contact"
+                            class="p-2 sm:p-4 hover:text-orange-500 transition-colors">Contacts</a></li>
+                    <!-- <li class="p-2">
                         <button id="darkModeToggle" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors" data-testid="button-dark-mode-toggle" aria-label="Toggle dark mode">
                             <svg id="sunIcon" class="w-6 h-6 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
@@ -54,16 +59,18 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
                             </svg>
                         </button>
-                    </li>
+                    </li> -->
                     <li class="p-2">
-                        <a class="bg-orange-500 hover:bg-orange-600 transition-colors rounded-full px-4 py-2 text-white text-sm sm:text-base" href="#" data-testid="button-download-cv">Download CV</a>
+                        <a class="bg-orange-500 hover:bg-orange-600 transition-colors rounded-full px-4 py-2 text-white text-sm sm:text-base"
+                            href="img/Debabrata_Resume.pdf" data-testid="button-download-cv">Download CV</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section id="home" class="my-12 sm:my-20 flex flex-col lg:flex-row justify-between items-center gap-8 p-4 max-w-7xl mx-auto">
+    <section id="home"
+        class="my-12 sm:my-20 flex flex-col lg:flex-row justify-between items-center gap-8 p-4 max-w-7xl mx-auto">
         <div class="w-full lg:w-1/2 text-center lg:text-left">
             <h2 class="text-lg sm:text-xl">Hi I am</h2>
             <h1 class="text-orange-500 font-bold text-2xl sm:text-3xl">Debabrata Paul</h1>
@@ -74,9 +81,11 @@
                 emerging technologies. I love creating efficient, impactful applications while exploring new ideas and
                 solving real-world problems
             </p>
-            <button class="bg-orange-500 hover:bg-orange-600 transition-colors text-lg sm:text-xl px-6 py-3 my-2 rounded" data-testid="button-hire-me">Hire me</button>
+            <button
+                class="bg-orange-500 hover:bg-orange-600 transition-colors text-lg sm:text-xl px-6 py-3 my-2 rounded"
+                data-testid="button-hire-me">Hire me</button>
         </div>
-        
+
         <div class="w-full lg:w-1/2 flex flex-col items-center gap-4">
             <div class="bg-white rounded-full w-64 h-64 sm:w-80 sm:h-80 overflow-hidden">
                 <img src="img/circle photo.png" alt="Profile picture" class="w-full h-full object-cover">
@@ -84,18 +93,23 @@
 
             <div>
                 <ul class="flex gap-4 p-2">
-                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="Facebook"><img class="w-8 h-8" src="img/F.png" alt="Facebook"></a></li>
-                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="Twitter"><img class="w-8 h-8" src="img/T.png" alt="Twitter"></a></li>
-                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="Instagram"><img class="w-8 h-8" src="img/I.png" alt="Instagram"></a></li>
-                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="LinkedIn"><img class="w-8 h-8" src="img/L.png" alt="LinkedIn"></a></li>
+                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="Facebook"><img
+                                class="w-8 h-8" src="img/F.png" alt="Facebook"></a></li>
+                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="Twitter"><img
+                                class="w-8 h-8" src="img/T.png" alt="Twitter"></a></li>
+                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="Instagram"><img
+                                class="w-8 h-8" src="img/I.png" alt="Instagram"></a></li>
+                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="LinkedIn"><img
+                                class="w-8 h-8" src="img/L.png" alt="LinkedIn"></a></li>
                 </ul>
             </div>
         </div>
     </section>
 
     <hr class="max-w-7xl mx-auto">
-    
-    <section id="about" class="my-12 sm:my-20 flex flex-col lg:flex-row-reverse justify-between items-center gap-8 p-4 max-w-7xl mx-auto">
+
+    <section id="about"
+        class="my-12 sm:my-20 flex flex-col lg:flex-row-reverse justify-between items-center gap-8 p-4 max-w-7xl mx-auto">
         <div class="w-full lg:w-1/2 flex flex-col items-center gap-4">
             <div class="bg-white rounded-full w-64 h-64 sm:w-80 sm:h-80 overflow-hidden">
                 <img src="img/circle photo.png" alt="Profile picture" class="w-full h-full object-cover">
@@ -103,14 +117,18 @@
 
             <div>
                 <ul class="flex gap-4 p-2">
-                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="Facebook"><img class="w-8 h-8" src="img/F.png" alt="Facebook"></a></li>
-                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="Twitter"><img class="w-8 h-8" src="img/T.png" alt="Twitter"></a></li>
-                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="Instagram"><img class="w-8 h-8" src="img/I.png" alt="Instagram"></a></li>
-                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="LinkedIn"><img class="w-8 h-8" src="img/L.png" alt="LinkedIn"></a></li>
+                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="Facebook"><img
+                                class="w-8 h-8" src="img/F.png" alt="Facebook"></a></li>
+                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="Twitter"><img
+                                class="w-8 h-8" src="img/T.png" alt="Twitter"></a></li>
+                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="Instagram"><img
+                                class="w-8 h-8" src="img/I.png" alt="Instagram"></a></li>
+                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="LinkedIn"><img
+                                class="w-8 h-8" src="img/L.png" alt="LinkedIn"></a></li>
                 </ul>
             </div>
         </div>
-        
+
         <div class="w-full lg:w-1/2 text-center lg:text-left">
             <h1 class="text-3xl sm:text-4xl font-bold mb-4">About me</h1>
             <p class="my-4 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0">
@@ -139,7 +157,7 @@
     </section>
 
     <hr class="max-w-7xl mx-auto">
-    
+
     <section id="services" class="p-4 my-12 sm:my-20 max-w-7xl mx-auto">
         <h1 class="text-center text-2xl sm:text-3xl font-bold">Services</h1>
         <p class="text-center mt-2 text-sm sm:text-base max-w-2xl mx-auto">
@@ -151,25 +169,29 @@
             <div class="card-light border rounded-2xl bg-white text-black p-6 hover:shadow-lg transition-shadow">
                 <img class="w-16 sm:w-20 mb-4" src="img/web.png" alt="Website icon">
                 <h2 class="text-lg font-semibold mb-2">Web Site</h2>
-                <p class="text-sm sm:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit Tenetur consequatur</p>
+                <p class="text-sm sm:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit Tenetur
+                    consequatur</p>
             </div>
 
             <div class="card-light border rounded-2xl bg-white text-black p-6 hover:shadow-lg transition-shadow">
                 <img class="w-16 sm:w-20 mb-4" src="img/app.png" alt="App icon">
                 <h2 class="text-lg font-semibold mb-2">APP</h2>
-                <p class="text-sm sm:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, consequatur.</p>
+                <p class="text-sm sm:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur,
+                    consequatur.</p>
             </div>
 
             <div class="card-light border rounded-2xl bg-white text-black p-6 hover:shadow-lg transition-shadow">
                 <img class="w-16 sm:w-20 mb-4" src="img/UI.png" alt="UI icon">
                 <h2 class="text-lg font-semibold mb-2">UI</h2>
-                <p class="text-sm sm:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, consequatur.</p>
+                <p class="text-sm sm:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur,
+                    consequatur.</p>
             </div>
 
             <div class="card-light border rounded-2xl bg-white text-black p-6 hover:shadow-lg transition-shadow">
                 <img class="w-16 sm:w-20 mb-4" src="img/ML.png" alt="ML icon">
                 <h2 class="text-lg font-semibold mb-2">ML</h2>
-                <p class="text-sm sm:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, consequatur.</p>
+                <p class="text-sm sm:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur,
+                    consequatur.</p>
             </div>
         </div>
     </section>
@@ -182,37 +204,49 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum ab illo laboriosam facere
             delectus adipisci magni sint ea architecto quia?
         </p>
-        
+
         <div class="flex flex-wrap justify-center gap-2 mt-6 mb-8">
-            <button class="border border-gray-300 dark:border-gray-600 px-4 py-2 rounded hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-colors" data-testid="button-filter-all">ALL</button>
-            <button class="border border-gray-300 dark:border-gray-600 px-4 py-2 rounded hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-colors" data-testid="button-filter-ux">UX</button>
-            <button class="border border-gray-300 dark:border-gray-600 px-4 py-2 rounded hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-colors" data-testid="button-filter-web">Web page</button>
-            <button class="border border-gray-300 dark:border-gray-600 px-4 py-2 rounded hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-colors" data-testid="button-filter-app">App design</button>
+            <button
+                class="border border-gray-300 dark:border-gray-600 px-4 py-2 rounded hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-colors"
+                data-testid="button-filter-all">ALL</button>
+            <button
+                class="border border-gray-300 dark:border-gray-600 px-4 py-2 rounded hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-colors"
+                data-testid="button-filter-ux">UX</button>
+            <button
+                class="border border-gray-300 dark:border-gray-600 px-4 py-2 rounded hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-colors"
+                data-testid="button-filter-web">Web page</button>
+            <button
+                class="border border-gray-300 dark:border-gray-600 px-4 py-2 rounded hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-colors"
+                data-testid="button-filter-app">App design</button>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             <div class="card-light border rounded-2xl bg-white text-black p-6 hover:shadow-lg transition-shadow">
                 <img src="img/I.png" alt="Project" class="w-full mb-4 rounded">
                 <h2 class="text-lg font-semibold mb-2">UI</h2>
-                <p class="text-sm sm:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, consequatur.</p>
+                <p class="text-sm sm:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur,
+                    consequatur.</p>
             </div>
 
             <div class="card-light border rounded-2xl bg-white text-black p-6 hover:shadow-lg transition-shadow">
                 <img src="img/I.png" alt="Project" class="w-full mb-4 rounded">
                 <h2 class="text-lg font-semibold mb-2">UI</h2>
-                <p class="text-sm sm:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, consequatur.</p>
+                <p class="text-sm sm:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur,
+                    consequatur.</p>
             </div>
 
             <div class="card-light border rounded-2xl bg-white text-black p-6 hover:shadow-lg transition-shadow">
                 <img src="img/I.png" alt="Project" class="w-full mb-4 rounded">
                 <h2 class="text-lg font-semibold mb-2">UI</h2>
-                <p class="text-sm sm:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, consequatur.</p>
+                <p class="text-sm sm:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur,
+                    consequatur.</p>
             </div>
 
             <div class="card-light border rounded-2xl bg-white text-black p-6 hover:shadow-lg transition-shadow">
                 <img src="img/I.png" alt="Project" class="w-full mb-4 rounded">
                 <h2 class="text-lg font-semibold mb-2">UI</h2>
-                <p class="text-sm sm:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, consequatur.</p>
+                <p class="text-sm sm:text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur,
+                    consequatur.</p>
             </div>
         </div>
     </section>
@@ -225,18 +259,13 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum ab illo laboriosam facere
             delectus adipisci magni sint ea architecto quia?
         </p>
-        
+
         <div class="my-8 flex flex-col sm:flex-row justify-center gap-2 max-w-md mx-auto">
-            <input 
-                class="input-light bg-white text-black border border-gray-300 dark:border-gray-600 rounded px-4 py-2 flex-1" 
-                type="email" 
-                placeholder="Enter Your email"
-                data-testid="input-email">
-            <input 
-                class="bg-amber-600 hover:bg-amber-700 transition-colors px-6 py-2 rounded cursor-pointer text-white" 
-                type="submit" 
-                value="Submit"
-                data-testid="button-submit">
+            <input
+                class="input-light bg-white text-black border border-gray-300 dark:border-gray-600 rounded px-4 py-2 flex-1"
+                type="email" placeholder="Enter Your email" data-testid="input-email">
+            <input class="bg-amber-600 hover:bg-amber-700 transition-colors px-6 py-2 rounded cursor-pointer text-white"
+                type="submit" value="Submit" data-testid="button-submit">
         </div>
     </section>
 
