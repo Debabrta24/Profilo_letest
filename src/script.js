@@ -1,11 +1,11 @@
+function light(){
+    document.getElementById("bodymain").className = "dark:bg-white dark:text-black"
+    document.getElementById("sunIcon").classList.toggle("hidden");
+    document.getElementById("moonIcon").classList.toggle("opacity-100");
+}
 
-const html = document.documentElement;
-const btn = document.getElementById('btn');
-
-btn.addEventListener('click', () => {
-    html.classList.toggle('dark');
-    localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
-});
-
-// keep user preference
-if (localStorage.theme === 'dark') html.classList.add('dark');
+function dark(){
+    document.getElementById("bodymain").className = "dark:bg-black dark:text-white"
+    document.getElementById("sunIcon").classList.toggle("visible");
+    document.getElementById("moonIcon").classList.toggle("hidden");
+}
