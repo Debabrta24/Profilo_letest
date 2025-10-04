@@ -50,17 +50,26 @@ function menu1() {
 //   text.style.display = "block";  // show text again
 // });
 
-const box = document.querySelector(".class3"); // your card
-const targets = document.querySelectorAll(".class4"); // all p tags inside
+const box1 = document.querySelector(".class31"); // your card 1 
+const box2 = document.querySelector(".class32"); // your card 1 
+const target1 = document.querySelector(".class4");
+const target2 = document.querySelector(".class5");
 
-box.addEventListener("mouseenter", () => {
-  targets.forEach(target => {
-    target.classList.add("hidden"); // hide text
-  });
+box1.addEventListener("mouseenter", () => {
+    target1.classList.add("hidden"); // hide text
+
 });
 
-box.addEventListener("mouseleave", () => {
-  targets.forEach(target => {
-    target.classList.remove("hidden"); // show text again
-  });
+box1.addEventListener("mouseleave", () => {
+    target1.classList.remove("hidden"); // show text again
+});
+
+
+box2.addEventListener("mouseenter", () => {
+    target2.classList.add("hidden"); // hide text
+
+});
+
+box2.addEventListener("mouseleave", () => {
+    target2.classList.remove("hidden"); // show text again
 });
