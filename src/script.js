@@ -39,13 +39,28 @@ function menu1() {
     }
 }
 
-const box = document.querySelector(".class3");
-const target = document.querySelectorAll(".class4");
+// const box = document.querySelector(".class3");
+// const target = document.querySelectorAll(".class4");
+
+// box.addEventListener("mouseenter", () => {
+//   target.classList.add("hidden");  // hide text
+// });
+
+// box.addEventListener("mouseleave", () => {
+//   text.style.display = "block";  // show text again
+// });
+
+const box = document.querySelector(".class3"); // your card
+const targets = document.querySelectorAll(".class4"); // all p tags inside
 
 box.addEventListener("mouseenter", () => {
-  target.classList.add("hidden");  // hide text
+  targets.forEach(target => {
+    target.classList.add("hidden"); // hide text
+  });
 });
 
 box.addEventListener("mouseleave", () => {
-  text.style.display = "block";  // show text again
+  targets.forEach(target => {
+    target.classList.remove("hidden"); // show text again
+  });
 });
