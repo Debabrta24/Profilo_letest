@@ -5,31 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Debabrata Paul - Software Engineer Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .dark {
-            background-color: #000;
-            color: #fff;
-        }
-
-        .dark .card-light {
-            background-color: #1a1a1a;
-            color: #fff;
-        }
-
-        .dark .input-light {
-            background-color: #2a2a2a;
-            color: #fff;
-        }
-
-        .dark hr {
-            border-color: #333;
-        }
-    </style>
+    <link rel="stylesheet" href="output.css">
+    
+   
 </head>
 
 <body class="bg-white dark:bg-black text-black dark:text-white transition-colors duration-300 px-4 sm:px-6 lg:px-8">
@@ -50,19 +28,26 @@
                             class="p-2 sm:p-4 hover:text-orange-500 transition-colors">Projects</a></li>
                     <li class="hidden md:block"><a href="#contact"
                             class="p-2 sm:p-4 hover:text-orange-500 transition-colors">Contacts</a></li>
-                    <!-- <li class="p-2">
-                        <button id="darkModeToggle" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors" data-testid="button-dark-mode-toggle" aria-label="Toggle dark mode">
-                            <svg id="sunIcon" class="w-6 h-6 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    <li class="p-2">
+                        <button id="darkModeToggle"
+                            class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
+                            data-testid="button-dark-mode-toggle" aria-label="Toggle dark mode">
+                            <svg id="sunIcon" class="w-6 h-6 hidden dark:block" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                                </path>
                             </svg>
-                            <svg id="moonIcon" class="w-6 h-6 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                            <svg id="moonIcon" class="w-6 h-6 block dark:hidden" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
+                                </path>
                             </svg>
                         </button>
-                    </li> -->
+                    </li>
                     <li class="p-2">
-                        <a class="bg-orange-500 hover:bg-orange-600 transition-colors rounded-full px-4 py-2 text-white text-sm sm:text-base"
-                            href="img/Debabrata_Resume.pdf" data-testid="button-download-cv">Download CV</a>
+                        <img src="img/menu.png" alt="">
                     </li>
                 </ul>
             </div>
@@ -82,8 +67,9 @@
                 solving real-world problems
             </p>
             <button
-                class="bg-orange-500 hover:bg-orange-600 transition-colors text-lg sm:text-xl px-6 py-3 my-2 rounded"
-                data-testid="button-hire-me">Hire me</button>
+                class="bg-orange-500 hover:bg-orange-600 transition-colors text-lg sm:text-xl px-6 py-3 my-2 rounded">Download
+                CV</button>
+
         </div>
 
         <div class="w-full lg:w-1/2 flex flex-col items-center gap-4">
@@ -109,22 +95,18 @@
     <hr class="max-w-7xl mx-auto">
 
     <section id="about"
-        class="my-12 sm:my-20 flex flex-col lg:flex-row-reverse justify-between items-center gap-8 p-4 max-w-7xl mx-auto">
-        <div class="w-full lg:w-1/2 flex flex-col items-center gap-4">
-            <div class="bg-white rounded-full w-64 h-64 sm:w-80 sm:h-80 overflow-hidden">
+        class="my-12 sm:my-20 flex flex-col lg:flex-row-reverse justify-between items-center gap-8 p-4 max-w-7xl mx-auto ">
+         <div class="w-full lg:w-1/2 flex flex-col items-center gap-4  ">
+            <div class="bg-white rounded-full w-64 h-64 sm:w-80 sm:h-80 overflow-hidden hidden md:block ">
                 <img src="img/circle photo.png" alt="Profile picture" class="w-full h-full object-cover">
             </div>
 
-            <div>
-                <ul class="flex gap-4 p-2">
-                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="Facebook"><img
-                                class="w-8 h-8" src="img/F.png" alt="Facebook"></a></li>
-                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="Twitter"><img
-                                class="w-8 h-8" src="img/T.png" alt="Twitter"></a></li>
-                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="Instagram"><img
-                                class="w-8 h-8" src="img/I.png" alt="Instagram"></a></li>
-                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="LinkedIn"><img
-                                class="w-8 h-8" src="img/L.png" alt="LinkedIn"></a></li>
+            <div class="hidden md:block " >
+                <ul class="flex gap-4 p-2 ">
+                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="Facebook"><img class="w-8 h-8" src="img/F.png" alt="Facebook"></a></li>
+                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="Twitter"><img class="w-8 h-8" src="img/T.png" alt="Twitter"></a></li>
+                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="Instagram"><img class="w-8 h-8" src="img/I.png" alt="Instagram"></a></li>
+                    <li><a href="#" class="hover:opacity-80 transition-opacity" aria-label="LinkedIn"><img class="w-8 h-8" src="img/L.png" alt="LinkedIn"></a></li>
                 </ul>
             </div>
         </div>
