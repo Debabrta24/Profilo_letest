@@ -9,6 +9,8 @@
       "Courier New", monospace;
     --color-orange-500: oklch(70.5% 0.213 47.604);
     --color-orange-600: oklch(64.6% 0.222 41.116);
+    --color-orange-700: oklch(55.3% 0.195 38.402);
+    --color-orange-800: oklch(47% 0.157 37.304);
     --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-amber-500: oklch(76.9% 0.188 70.08);
@@ -727,6 +729,20 @@
       }
     }
   }
+  .hover\:bg-orange-700 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-orange-700);
+      }
+    }
+  }
+  .hover\:bg-orange-800 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-orange-800);
+      }
+    }
+  }
   .hover\:font-bold {
     &:hover {
       @media (hover: hover) {
@@ -772,6 +788,11 @@
           --tw-shadow-color: color-mix(in oklab, var(--color-amber-500) var(--tw-shadow-alpha), transparent);
         }
       }
+    }
+  }
+  .active\:bg-amber-600 {
+    &:active {
+      background-color: var(--color-amber-600);
     }
   }
   .max-sm\:h-\[200px\] {
