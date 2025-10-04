@@ -17,9 +17,9 @@
             <div class="p-2 sm:p-4">
                 <h1 class="text-xl sm:text-2xl font-bold">Debabrata</h1>
             </div>
-            
-  <body class="bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-500">
-            <div  id="btn" class="flex items-center gap-2">
+
+            <!-- <body class="bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-500"> -->
+            <div id="btn" class="flex items-center gap-2">
                 <ul class="flex flex-wrap items-center gap-2 ">
                     <li class="hidden lg:block"><a href="#home"
                             class="p-2 sm:p-4 hover:text-orange-500 transition-colors ">Home</a></li>
@@ -35,8 +35,7 @@
                         <button onclick="toggole()" id="darkModeToggle"
                             class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
                             data-testid="button-dark-mode-toggle" aria-label="Toggle dark mode">
-                            <svg id="sunIcon" class="w-6 h-6 " fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
+                            <svg id="sunIcon" class="w-6 h-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
                                 </path>
@@ -49,11 +48,50 @@
                             </svg>
                         </button>
                     </li>
-                    <li class="p-2 lg:hidden ">
-                        <img src="img/menu.png" alt="">
-                    </li>
+                    <div>
+                        <div>
+                            <li  onclick="menu1()" class="p-2 lg:hidden ">
+                                <img id="imgg" src="img/menu.png" alt="">
+                            </li>
+                            <ul id="menu" class="  hidden items-center gap-2">
+                                <li class=""><a href="#home"
+                                        class="p-2 sm:p-4 hover:text-orange-500 transition-colors ">Home</a></li>
+                                <li class=""><a href="#about"
+                                        class="p-2 sm:p-4 hover:text-orange-500 transition-colors ">About
+                                        me</a></li>
+                                <li class=""><a href="#services"
+                                        class="p-2 sm:p-4 hover:text-orange-500 transition-colors">Services</a></li>
+                                <li class=""><a href="#projects"
+                                        class="p-2 sm:p-4 hover:text-orange-500 transition-colors">Projects</a></li>
+                                <li class=""><a href="#contact"
+                                        class="p-2 sm:p-4 hover:text-orange-500 transition-colors">Contacts</a></li>
+                                <li class="">
+                            </ul>
+                        </div>
+                    </div>
+
                 </ul>
+
+
+
             </div>
+            <!-- <div>
+
+                    <ul class=" items-center gap-2">
+                        <li class=""><a href="#home"
+                                class="p-2 sm:p-4 hover:text-orange-500 transition-colors ">Home</a></li>
+                        <li class=""><a href="#about" class="p-2 sm:p-4 hover:text-orange-500 transition-colors ">About
+                                me</a></li>
+                        <li class=""><a href="#services"
+                                class="p-2 sm:p-4 hover:text-orange-500 transition-colors">Services</a></li>
+                        <li class=""><a href="#projects"
+                                class="p-2 sm:p-4 hover:text-orange-500 transition-colors">Projects</a></li>
+                        <li class=""><a href="#contact"
+                                class="p-2 sm:p-4 hover:text-orange-500 transition-colors">Contacts</a></li>
+                        <li class="p-2">
+                    </ul>
+
+                </div> -->
         </div>
     </nav>
 
@@ -295,7 +333,7 @@
     <footer class="text-center my-12 sm:my-20 text-sm sm:text-base">
         &copy;2025 all copyright reserved
     </footer>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 

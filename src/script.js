@@ -2,7 +2,8 @@
 const light = document.getElementById("sunIcon");
 const dark = document.getElementById("moonIcon");
 const bodymain = document.getElementById("bodymain");
-
+const menu = document.getElementById("menu");
+const img = document.getElementById("imgg");
 
 function toggole() {
     light.classList.toggle("hidden");
@@ -12,12 +13,31 @@ function toggole() {
     dark.classList.toggle("block");
     if (bodymain.classList.contains("dark:bg-black")) {
         bodymain.classList.remove("dark:bg-black", "dark:text-white");
-        bodymain.classList.add("dark:bg-white", "dark:text-black")
+        bodymain.classList.add("dark:bg-white", "dark:text-black");
     }
     else {
-        bodymain.classList.remove("dark:bg-white", "dark:text-black")
+        bodymain.classList.remove("dark:bg-white", "dark:text-black");
         bodymain.classList.add("dark:bg-black", "dark:text-white");
     }
-
 }
+
+function menu1() {
+
+    if (menu.classList.contains("hidden")) {
+        menu.classList.remove("hidden")
+    }
+    else {
+
+        menu.classList.add("hidden")
+    }
+    if (img.src.includes("img/menu.png")) {
+        img.setAttribute("src", "img/cross.png");
+        // alert("nn")
+    }
+    else {
+        img.setAttribute("src", "img/menu.png")
+    }
+}
+
+
 
