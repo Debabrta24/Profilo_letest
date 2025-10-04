@@ -1,11 +1,22 @@
-.class1:hover{
+.class1:hover {
     background-color: white;
     color: black;
     border: 1px solid black;
 
 }
 
-.class2:hover{
+.class2:hover {
     background-color: rgb(209, 135, 25);
     color: black;
+}
+/* 
+.class3:hover {
+    display: none;
+} */
+
+.hovered {
+    background: red;
+}
+.hidden{
+    display:none;
 }

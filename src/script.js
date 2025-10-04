@@ -39,5 +39,13 @@ function menu1() {
     }
 }
 
+const box = document.querySelector(".class3");
+const target = document.querySelectorAll(".class4");
 
+box.addEventListener("mouseenter", () => {
+  target.classList.add("hidden");  // hide text
+});
 
+box.addEventListener("mouseleave", () => {
+  text.style.display = "block";  // show text again
+});
