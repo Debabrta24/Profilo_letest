@@ -1,3 +1,9 @@
 .class1:hover{
     background-color: white;
+    color: black;
+}
+
+.class2:hover{
+    background-color: white;
+    color: black;
 }
