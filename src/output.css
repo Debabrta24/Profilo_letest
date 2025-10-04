@@ -211,6 +211,9 @@
   .visible {
     visibility: visible;
   }
+  .absolute {
+    position: absolute;
+  }
   .mx-auto {
     margin-inline: auto;
   }
