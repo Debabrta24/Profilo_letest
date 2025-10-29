@@ -113,3 +113,7 @@ boxes.forEach((box, index) => {
     target2.classList.add("class5");
   });
 });
+
+function showalert(){
+    alert("comming soon")
+}

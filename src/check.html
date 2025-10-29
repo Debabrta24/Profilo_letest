@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Range auto-revert</title>
+  <style>
+    input[type="range"]{
+      width: 320px;
+      transition: all 0.12s ease; /* smooth snap-back */
+    }
+  </style>
+</head>
+<body>
+  <label>Fixed value:
+    <input id="r" type="range" min="0" max="100" value="40" />
+  </label>
+
+  <script>
+    const r = document.getElementById('r');
+    // store the "locked" value here
+    let lockedValue = r.value;
+
+    // When user starts interacting (mouse/touch)
+    r.addEventListener('pointerdown', () => {
+      lockedValue = r.value;
+    });
+
+    // Also store value when it receives keyboard focus (so arrows use this)
+    r.addEventListener('focus', () => {
+      lockedValue = r.value;
+    });
+
+    // When user moves the slider, immediately revert to lockedValue
+    r.addEventListener('input', () => {
+      // set value back (this prevents visible change)
+      r.value = lockedValue;
+    });
+
+    // If the browser fires change after input, ensure it's reverted as well
+    r.addEventListener('change', () => {
+      r.value = lockedValue;
+    });
+
+    // Prevent keyboard arrow/pgup/pgdown from changing the slider
+    r.addEventListener('keydown', (e) => {
+      const block = ['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','PageUp','PageDown','Home','End'];
+      if (block.includes(e.key)) {
+        e.preventDefault();
+        // re-assert the locked value visually
+        r.value = lockedValue;
+      }
+    });
+
+    // OPTIONAL: function to change the locked value programmatically
+    function setLockedValue(newVal) {
+      lockedValue = String(newVal);
+      r.value = lockedValue;
+    }
+
+    // expose to console for testing:
+    window.setLockedValue = setLockedValue;
+  </script>
+</body>
+</html>
