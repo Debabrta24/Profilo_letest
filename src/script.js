@@ -84,3 +84,6 @@ const target1 = document.querySelector(".project_p");
 box1.addEventListener("mouseenter", () => {
     target1.classList.add("hidden"); // show text again
 });
+box1.addEventListener("mouseleave", () => {
+    target1.classList.remove("hidden"); // show text again
+});
