@@ -81,6 +81,6 @@ const box1 = document.querySelector(".show_project_card");
 
 
 const target1 = document.querySelector(".project_p");
-box1.addEventListener("mouseleave", () => {
+box1.addEventListener("mouseenter", () => {
     target1.classList.add("hidden"); // show text again
 });
