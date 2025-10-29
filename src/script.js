@@ -76,14 +76,40 @@ function menu1() {
 
 
 
-const box1 = document.querySelector(".show_project_card");
+// const box1 = document.querySelectorAll(".show_project_card");
 
 
 
-const target1 = document.querySelector(".project_p");
-box1.addEventListener("mouseenter", () => {
-    target1.classList.add("hidden"); // show text again
-});
-box1.addEventListener("mouseleave", () => {
-    target1.classList.remove("hidden"); // show text again
+// const target1 = document.querySelectorAll(".project_p");
+// const target2 = document.querySelectorAll(".show_project_card_hover");
+
+// box1.addEventListener("mouseenter", () => {
+//     target1[0].classList.add("class5"); // show text again
+//     target2.classList.remove("class5"); // show text again
+// });
+// box1.addEventListener("mouseleave", () => {
+//     target1.classList.remove("class5"); // show text again
+    
+//     target2.classList.add("class5"); // show text again
+    
+
+// });
+
+const boxes = document.querySelectorAll(".show_project_card");
+const targets1 = document.querySelectorAll(".project_p");
+const targets2 = document.querySelectorAll(".show_project_card_hover");
+
+boxes.forEach((box, index) => {
+  const target1 = targets1[index];
+  const target2 = targets2[index];
+
+  box.addEventListener("mouseenter", () => {
+    target1.classList.add("class5");
+    target2.classList.remove("class5");
+  });
+
+  box.addEventListener("mouseleave", () => {
+    target1.classList.remove("class5");
+    target2.classList.add("class5");
+  });
 });
