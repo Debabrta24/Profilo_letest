@@ -115,5 +115,5 @@ boxes.forEach((box, index) => {
 });
 
 function showalert(){
-    alert("comming soon")
+    alert("Uploaded soon.......")
 }
